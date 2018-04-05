@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div  data-tid="Deck" class="container screen">
+		<div class="row above justify-content-between">
+			<a data-tid="Menu-newGame" href="firstPage.html" class="restart btn btn-link"><strong>Начать заново</strong></a>
+			<p>
+				<strong>Очки: <span data-tid="Menu-scores" id="grades">0</span></strong>
+			</p>
+		</div>
+		<div class="row justify-content-around">
+			<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card1">
+				<img data-tid="Card" src="#" alt="" id="front1" class="picture">
+				<img data-tid="Card-flipped" onclick="screenB(this,0)" src="Cards/null.png" alt="" id="back1" class="pictureback">
+			</div>
+			<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card2">
+				<img data-tid="Card" src="#" alt="" id="front2" class="picture">
+				<img data-tid="Card-flipped" onclick="screenB(this,1)" src="Cards/null.png" alt="" id="back2" class="pictureback">
+			</div>
+			<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card3">
+				<img data-tid="Card" src="#" alt="" id="front3" class="picture">
+				<img data-tid="Card-flipped" onclick="screenB(this,2)" src="Cards/null.png" alt="" id="back3" class="pictureback">
+			</div>
+			<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card4">
+				<img data-tid="Card" src="#" alt="" id="front4" class="picture">
+				<img data-tid="Card-flipped" onclick="screenB(this,3)" src="Cards/null.png" alt="" id="back4" class="pictureback">
+			</div>
+			<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card5">
+				<img data-tid="Card" src="#" alt="" id="front5" class="picture">
+				<img data-tid="Card-flipped" onclick="screenB(this,4)" src="Cards/null.png" alt="" id="back5" class="pictureback">
+			</div>
+			<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card6">
+				<img data-tid="Card" src="#" alt="" id="front6" class="picture">
+				<img data-tid="Card-flipped" onclick="screenB(this,5)" src="Cards/null.png" alt="" id="back6" class="pictureback">
+			</div>
+		</div>
+		<div class="row justify-content-around">
+			<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card7">
+				<img data-tid="Card" src="#" alt="" id="front7" class="picture">
+				<img data-tid="Card-flipped" onclick="screenB(this,6)" src="Cards/null.png" alt="" id="back7" class="pictureback">
+			</div>
+			<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card8">
+				<img data-tid="Card" src="#" alt="" id="front8" class="picture">
+				<img data-tid="Card-flipped" onclick="screenB(this,7)" src="Cards/null.png" alt="" id="back8" class="pictureback">
+			</div>
+			<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card9">
+				<img data-tid="Card" src="#" alt="" id="front9" class="picture">
+				<img data-tid="Card-flipped" onclick="screenB(this,8)" src="Cards/null.png" alt="" id="back9" class="pictureback">
+			</div>
+			<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card10">
+				<img  data-tid="Card" src="#" alt="" id="front10" class="picture">
+				<img  data-tid="Card-flipped" onclick="screenB(this,9)" src="Cards/null.png" alt="" id="back10" class="pictureback"
+				></div>
+				<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card11">
+					<img  data-tid="Card" src="#" alt="" id="front11" class="picture">
+					<img  data-tid="Card-flipped" onclick="screenB(this,10)" src="Cards/null.png" alt="" id="back11" class="pictureback">
+				</div>
+				<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card12">
+					<img  data-tid="Card" src="#" alt="" id="front12" class="picture">
+					<img  data-tid="Card-flipped" onclick="screenB(this,11)" src="Cards/null.png" alt="" id="back12" class="pictureback">
+				</div>
+			</div>
+			<div class="row justify-content-around">
+				<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card13">
+					<img  data-tid="Card" src="#" alt="" id="front13" class="picture">
+					<img  data-tid="Card-flipped" onclick="screenB(this,12)" src="Cards/null.png" alt="" id="back13" class="pictureback">
+				</div>
+				<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card14">
+					<img  data-tid="Card" src="#" alt="" id="front14" class="picture">
+					<img  data-tid="Card-flipped" onclick="screenB(this,13)" src="Cards/null.png" alt="" id="back14" class="pictureback">
+				</div>
+				<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card15">
+					<img  data-tid="Card" src="#" alt="" id="front15" class="picture">
+					<img  data-tid="Card-flipped" onclick="screenB(this,14)" src="Cards/null.png" alt="" id="back15" class="pictureback">
+				</div>
+				<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card16">
+					<img  data-tid="Card" src="#" alt="" id="front16" class="picture">
+					<img  data-tid="Card-flipped" onclick="screenB(this,15)" src="Cards/null.png" alt="" id="back16" class="pictureback">
+				</div>
+				<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card17">
+					<img  data-tid="Card" src="#" alt="" id="front17" class="picture">
+					<img  data-tid="Card-flipped" onclick="screenB(this,16)" src="Cards/null.png" alt="" id="back17" class="pictureback">
+				</div>
+				<div class="justify-content-center col-sm-2 asset" data-tid="Card" id="card18">
+					<img  data-tid="Card" src="#" alt="" id="front18" class="picture">
+					<img  data-tid="Card-flipped" onclick="screenB(this,17)" src="Cards/null.png" alt="" id="back18" class="pictureback">
+				</div>
+			</div>			
+		</div>
+		<script src="js.js" defer></script>
+	</body>
+	</html>

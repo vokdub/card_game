@@ -1,0 +1,13 @@
+body{
+	background: green;
+	padding-top: 12%;
+}
+h1{
+	color:#f8f9fa;
+}
+button{
+	color: green !important;
+}
+form{
+	margin-top: 1em;
+}

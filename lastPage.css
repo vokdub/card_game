@@ -1,0 +1,14 @@
+body{
+	background: green;
+	padding-top: 12%;
+}
+h1{
+	color:#f8f9fa;
+}
+button{
+	color: green !important;
+}
+.record{
+	color:#f8f9fa;
+	font-size: 2.5em;
+}

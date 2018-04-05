@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="lastPage.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function param(Name)
+		{
+			var pp = 10;
+			var Params = location.search.substring(1).split("&");
+			var variable = "";
+			for (var i = 0; i < Params.length; i++)
+			{
+				if(Params[i].split("=")[0] == Name)
+				{
+					if (Params[i].split("=").length > 1)
+						variable = Params[i].split("=")[1];
+					return variable;
+				}}
+				return "";
+			}
+			var select=param("per");
+			console.log(select);
+			window.onload = function() {
+				document.getElementById('grades').innerHTML=select;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row justify-content-center">
+				<img src="assets/Group2.png" alt="">
+			</div>
+			<div class="row justify-content-center">
+				<h1>Поздравляем!</h1>				
+			</div>	
+			<div class="row justify-content-center record">
+				<p><strong>Ваш итоговый счет : <span id='grades'>0</span></strong></p>
+			</div>	
+			<div class="row justify-content-center">			
+				<form action="firstPage.html">
+					<button data-tid="EndGame-retryGame" class="btn btn-light" type="submit"><strong>Ещё раз</strong></button>
+				</form>			
+			</div>
+		</div>		
+	</body>
+	</html>

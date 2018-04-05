@@ -1,0 +1,25 @@
+body{
+	background: green;
+	margin-top: 6%;
+	padding: 0;
+}
+img{
+	width: 90%;
+	height: auto;
+}
+.row{
+	margin-top: 1.5em;
+}
+.pictureback{
+	display: none;
+}
+.above{
+	font-size: 1.2em;
+	padding-left: 0.4%;
+	padding-right: 3%;
+	color: #f8f9fa;
+}
+.restart, .restart:hover{
+	font-size: inherit;
+	color: #f8f9fa;
+}
